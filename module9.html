@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 9 - Philippine Nationalism</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="module-pages.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="joserizal.png" alt="Jose Rizal Logo" class="logo">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="modules.html" class="active">Modules</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="travels.html">Travels</a></li>
+                <li><a href="game1.html">Bonus Game</a></li>
+                <li><a href="examination.html">Test Yourself</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="module-content">
+        <h1>Module 9: Dr. Jose Rizal and Philippine Nationalism</h1>
+
+        <section class="lesson">
+            <h2>Lesson 1: Bayani and Kabayanihan</h2>
+            <div class="lesson-content">
+                <h3>Understanding "Bayani"</h3>
+                <p>According to Dr. Zeus Salazar (1997), the local concept of bayani has a different value and is richer than its western counterpart "hero". The "héroe" could be likened to a martyr who may or may not think of compatriots when making actions. A "héroe" commonly acts as an individual and is viewed to be exceptional.</p>
+                
+                <h3>Concept of "Kabayanihan"</h3>
+                <ul>
+                    <li>Community Spirit
+                        <ul>
+                            <li>Acts with collective concern in mind</li>
+                            <li>Focuses on common good</li>
+                            <li>Emphasizes unity and cooperation</li>
+                        </ul>
+                    </li>
+                    <li>Active Heroism
+                        <ul>
+                            <li>Helping without expecting returns</li>
+                            <li>Volunteering for community</li>
+                            <li>Supporting collective achievements</li>
+                        </ul>
+                    </li>
+                    <li>Filipino Values
+                        <ul>
+                            <li>Pakikisama (Solidarity)</li>
+                            <li>Pagdamay (Shared responsibility)</li>
+                            <li>Pakikipagkapwa (Unity with others)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 2: Rizal and Philippine Nationalism</h2>
+            <div class="lesson-content">
+                <h3>Rizal's Nationalism</h3>
+                <ul>
+                    <li>Personal Experience
+                        <ul>
+                            <li>Witnessed injustices firsthand</li>
+                            <li>Family faced persecution</li>
+                            <li>Experienced colonial oppression</li>
+                        </ul>
+                    </li>
+                    <li>Response to Oppression
+                        <ul>
+                            <li>Used education and skills for reform</li>
+                            <li>Wrote to expose colonial abuses</li>
+                            <li>Promoted peaceful resistance</li>
+                        </ul>
+                    </li>
+                    <li>Legacy of Reform
+                        <ul>
+                            <li>Inspired Filipino consciousness</li>
+                            <li>United Filipinos for freedom</li>
+                            <li>Promoted education and progress</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 3: National Symbols and Recognition</h2>
+            <div class="lesson-content">
+                <h3>National Heroes Commission Criteria</h3>
+                <p>The former president Fidel V. Ramos enacted E.O Number 75 on March 28, 1993, establishing the National Heroes Commission (NHC). The criteria for choosing a national hero include:</p>
+                <ul>
+                    <li>Heroes must:
+                        <ul>
+                            <li>Have a concept of nation and aspire for freedom</li>
+                            <li>Define and contribute to a system of freedom and order</li>
+                            <li>Contribute to the quality of life and destiny of a nation</li>
+                            <li>Think of the future generations</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>National Symbols</h3>
+                <ul>
+                    <li>Official Recognition
+                        <ul>
+                            <li>Rizal Day (December 30)</li>
+                            <li>Rizal monuments nationwide</li>
+                            <li>Republic Act 1425 (Rizal Law)</li>
+                            <li>Presence in Philippine currency</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="references">
+            <h2>References</h2>
+            <ul>
+                <li>Salazar, Z.A. (1997). Si Andres Bonifacio at ang Kabayanihang Pilipino</li>
+                <li>National Heroes Committee Technical Report (1995)</li>
+                <li>Executive Order No. 75 (1993)</li>
+                <li>Republic Act 1425 (Rizal Law)</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Add navbar scroll behavior
+        const navbar = document.querySelector('.navbar');
+        let lastScrollTop = 0;
+        
+        navbar.classList.add('show');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop === 0) {
+                navbar.classList.remove('hide');
+                navbar.classList.add('show');
+            }
+            else if (scrollTop > lastScrollTop) {
+                navbar.classList.remove('show');
+                navbar.classList.add('hide');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html> 

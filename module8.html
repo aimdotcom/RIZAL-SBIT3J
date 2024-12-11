@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 8 - Philippines A Century Hence</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="module-pages.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="joserizal.png" alt="Jose Rizal Logo" class="logo">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="modules.html" class="active">Modules</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="travels.html">Travels</a></li>
+                <li><a href="game1.html">Bonus Game</a></li>
+                <li><a href="examination.html">Test Yourself</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="module-content">
+        <h1>Module 8: The Philippines, A Century Hence</h1>
+
+        <section class="lesson">
+            <h2>Lesson 1: Background and Context</h2>
+            <div class="lesson-content">
+                <h3>Publication History</h3>
+                <p>Published in La Solidaridad from September 1889 to January 1890, "The Philippines: A Century Hence" was one of Rizal's most important essays. It analyzed the possible future of the Philippines based on its historical and current conditions.</p>
+                
+                <h3>Purpose and Objectives</h3>
+                <ul>
+                    <li>Historical Analysis
+                        <ul>
+                            <li>Study past conditions of the Philippines</li>
+                            <li>Examine present state under Spanish rule</li>
+                            <li>Project future scenarios based on trends</li>
+                        </ul>
+                    </li>
+                    <li>Social Commentary
+                        <ul>
+                            <li>Analyze causes of Filipino suffering</li>
+                            <li>Identify systemic problems</li>
+                            <li>Propose necessary reforms</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 2: Four Possible Scenarios</h2>
+            <div class="lesson-content">
+                <h3>Rizal's Predictions</h3>
+                <ul>
+                    <li>Scenario 1: Spanish Colony
+                        <ul>
+                            <li>Continuation of Spanish rule</li>
+                            <li>No significant reforms</li>
+                            <li>Growing discontent among Filipinos</li>
+                        </ul>
+                    </li>
+                    <li>Scenario 2: New Colonial Power
+                        <ul>
+                            <li>Spain loses control</li>
+                            <li>Another nation colonizes Philippines</li>
+                            <li>Different form of colonial rule</li>
+                        </ul>
+                    </li>
+                    <li>Scenario 3: Spanish Reforms
+                        <ul>
+                            <li>Spain grants reforms</li>
+                            <li>Greater autonomy for Philippines</li>
+                            <li>Improved colonial relationship</li>
+                        </ul>
+                    </li>
+                    <li>Scenario 4: Independence
+                        <ul>
+                            <li>Philippines achieves freedom</li>
+                            <li>Self-governance established</li>
+                            <li>National sovereignty realized</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Analysis of Scenarios</h3>
+                <p>Rizal carefully examined each possibility, considering factors such as:</p>
+                <ul>
+                    <li>Spanish colonial policies and attitudes</li>
+                    <li>Growing Filipino nationalism and education</li>
+                    <li>International political climate</li>
+                    <li>Economic and social conditions</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 3: Historical Impact and Relevance</h2>
+            <div class="lesson-content">
+                <h3>Accuracy of Predictions</h3>
+                <p>Many of Rizal's predictions came true:</p>
+                <ul>
+                    <li>End of Spanish colonial rule</li>
+                    <li>American colonization</li>
+                    <li>Rise of Filipino nationalism</li>
+                    <li>Eventually achieving independence</li>
+                </ul>
+
+                <h3>Contemporary Significance</h3>
+                <p>The essay remains relevant today for:</p>
+                <ul>
+                    <li>Understanding historical patterns</li>
+                    <li>Analyzing current social issues</li>
+                    <li>Planning for the nation's future</li>
+                    <li>Learning from past experiences</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="references">
+            <h2>References</h2>
+            <ul>
+                <li>Austin Craig, Noli Me Tangere Quarter-Centennial Series - The Philippines A Century Hence By José Rizal</li>
+                <li>Jose, Ricardo. KASAYSAYAN The Story of The Filipino People</li>
+                <li>Rizal's essay "The Philippines: A Century Hence" from La Solidaridad</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Add navbar scroll behavior
+        const navbar = document.querySelector('.navbar');
+        let lastScrollTop = 0;
+        
+        navbar.classList.add('show');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop === 0) {
+                navbar.classList.remove('hide');
+                navbar.classList.add('show');
+            }
+            else if (scrollTop > lastScrollTop) {
+                navbar.classList.remove('show');
+                navbar.classList.add('hide');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,121 @@
+.works-content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 50px 50px;
+    line-height: var(--line-height-normal);
+    min-height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                url('rizal-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.works-category {
+    margin-bottom: 60px;
+    background-color: #f0ebe5;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.works-category h2 {
+    color: #333;
+    font-size: var(--heading-medium);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #654321;
+    position: relative;
+}
+
+.work-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.work-item {
+    background-color: #654321;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #f0ebe5;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    color: white;
+}
+
+.work-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    background-color: #7B3F00;
+}
+
+.work-item h3 {
+    color: white;
+    font-size: var(--text-large);
+    margin-bottom: 15px;
+}
+
+.work-item .year {
+    color: #f0ebe5;
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-size: var(--text-medium);
+}
+
+.work-item .description {
+    color: white;
+    font-size: var(--text-medium);
+    line-height: var(--line-height-normal);
+}
+
+/* Category-specific colors - different shades of brown */
+.novels .work-item {
+    border-left-color: #7B3F00;
+}
+
+.poems .work-item {
+    border-left-color: #654321;
+}
+
+.essays .work-item {
+    border-left-color: #7B3F00;
+}
+
+.letters .work-item {
+    border-left-color: #654321;
+}
+
+.other-writings .work-item {
+    border-left-color: #7B3F00;
+}
+
+.scientific .work-item {
+    border-left-color: #654321;
+}
+
+@media (max-width: 768px) {
+    .works-content {
+        padding: 60px 20px 20px 20px;
+    }
+
+    .work-items {
+        grid-template-columns: 1fr;
+    }
+
+    .works-category {
+        padding: 20px;
+    }
+
+    .works-category h2 {
+        font-size: 2.2em;
+    }
+
+    .work-item h3 {
+        font-size: 1.4em;
+    }
+
+    .work-item .description {
+        font-size: 1.05em;
+    }
+} 

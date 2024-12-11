@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5 - Exile, Trial, and Death</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="module-pages.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="joserizal.png" alt="Jose Rizal Logo" class="logo">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="modules.html" class="active">Modules</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="travels.html">Travels</a></li>
+                <li><a href="game1.html">Bonus Game</a></li>
+                <li><a href="examination.html">Test Yourself</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="module-content">
+        <h1>Module 5: Rizal's Life: Exile, Trial, and Death</h1>
+
+        <section class="lesson">
+            <h2>Lesson 1: Exile in Dapitan (1892-1896)</h2>
+            <div class="lesson-content">
+                <h3>Life in Exile</h3>
+                <p>After his deportation to Dapitan, Rizal made the most of his exile through various achievements and contributions:</p>
+                
+                <h3>Major Accomplishments</h3>
+                <ul>
+                    <li>Educational Initiatives
+                        <ul>
+                            <li>Established a school for boys</li>
+                            <li>Taught modern methods of education</li>
+                            <li>Emphasized both academic and practical skills</li>
+                            <li>Influenced many young minds</li>
+                        </ul>
+                    </li>
+                    <li>Community Development
+                        <ul>
+                            <li>Created a water supply system for Dapitan</li>
+                            <li>Improved town planning and sanitation</li>
+                            <li>Initiated agricultural projects</li>
+                            <li>Enhanced local infrastructure</li>
+                        </ul>
+                    </li>
+                    <li>Medical Practice
+                        <ul>
+                            <li>Treated numerous patients</li>
+                            <li>Performed successful eye surgeries</li>
+                            <li>Provided free medical care to the poor</li>
+                            <li>Gained reputation as a skilled physician</li>
+                        </ul>
+                    </li>
+                    <li>Scientific Research
+                        <ul>
+                            <li>Conducted studies on local flora and fauna</li>
+                            <li>Collected specimens for European museums</li>
+                            <li>Corresponded with international scientists</li>
+                            <li>Made significant scientific discoveries</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 2: The Trial</h2>
+            <div class="lesson-content">
+                <h3>Legal Proceedings</h3>
+                <ul>
+                    <li>Charges Filed
+                        <ul>
+                            <li>Rebellion</li>
+                            <li>Sedition</li>
+                            <li>Conspiracy against the government</li>
+                        </ul>
+                    </li>
+                    <li>Court Martial Process
+                        <ul>
+                            <li>Trial dates: December 26-29, 1896</li>
+                            <li>Defense by Lt. Luis Taviel de Andrade</li>
+                            <li>Lack of direct evidence linking to revolution</li>
+                        </ul>
+                    </li>
+                    <li>Rizal's Defense
+                        <ul>
+                            <li>Maintained innocence</li>
+                            <li>Emphasized belief in peaceful reform</li>
+                            <li>Rejected violent revolution</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 3: Final Days and Death</h2>
+            <div class="lesson-content">
+                <h3>Last Hours</h3>
+                <ul>
+                    <li>Cell in Fort Santiago
+                        <ul>
+                            <li>Wrote his final poem "Mi Último Adiós"</li>
+                            <li>Married Josephine Bracken</li>
+                            <li>Reconciled with Catholic faith</li>
+                        </ul>
+                    </li>
+                    <li>Final Morning
+                        <ul>
+                            <li>Date: December 30, 1896</li>
+                            <li>Time: 7:03 AM</li>
+                            <li>Location: Bagumbayan (now Rizal Park)</li>
+                        </ul>
+                    </li>
+                    <li>Execution
+                        <ul>
+                            <li>Requested to face firing squad</li>
+                            <li>Last words: "consummatum est" (it is finished)</li>
+                            <li>Shot in the back as Spanish authorities considered him a traitor</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="references">
+            <h2>References</h2>
+            <ul>
+                <li>Gregorio F. Zaide; JOSE RIZAL: Life, Works & Writings of a Genius, Writer, Scientist & National Hero 1984 ed.</li>
+                <li>Augusto V. De Vlana, Helena Ma, F. Cabrera, et al., Jose Rizal: Social Reformer and Patriot</li>
+                <li>Gagelonia, Pedro A. Rizal's Life, Works, and Writings. National Bookstore, Inc., 1974</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Add navbar scroll behavior
+        const navbar = document.querySelector('.navbar');
+        let lastScrollTop = 0;
+        
+        navbar.classList.add('show');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop === 0) {
+                navbar.classList.remove('hide');
+                navbar.classList.add('show');
+            }
+            else if (scrollTop > lastScrollTop) {
+                navbar.classList.remove('show');
+                navbar.classList.add('hide');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 - Philippines in the 19th Century</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="module-pages.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="joserizal.png" alt="Jose Rizal Logo" class="logo">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="modules.html" class="active">Modules</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="travels.html">Travels</a></li>
+                <li><a href="game1.html">Bonus Game</a></li>
+                <li><a href="examination.html">Test Yourself</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="module-content">
+        <h1>Module 2: The Philippines in the 19th Century</h1>
+
+        <section class="lesson">
+            <h2>Lesson 1: The Global Context: The Three Great Revolutions</h2>
+            <div class="lesson-content">
+                <h3>Historical Background</h3>
+                <p>The 19th century marked the genesis of modern life and the beginning of many nations and states of the world. Modernity was hastened by three great revolutions:</p>
+                
+                <h3>Major Revolutions</h3>
+                <ul>
+                    <li>Industrial Revolution in England
+                        <ul>
+                            <li>Transformed manufacturing and trade</li>
+                            <li>Led to technological advancements</li>
+                            <li>Changed social and economic structures</li>
+                        </ul>
+                    </li>
+                    <li>French Revolution in France
+                        <ul>
+                            <li>Promoted ideas of liberty, equality, and fraternity</li>
+                            <li>Challenged traditional monarchical systems</li>
+                            <li>Influenced political thinking worldwide</li>
+                        </ul>
+                    </li>
+                    <li>American Revolution
+                        <ul>
+                            <li>Established democratic principles</li>
+                            <li>Demonstrated successful colonial independence</li>
+                            <li>Inspired other independence movements</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 2: Philippine Society Under Spanish Rule</h2>
+            <div class="lesson-content">
+                <h3>Development of National Consciousness</h3>
+                <p>According to professor Dela Costa, "It is difficult to say when Filipinos began to think of themselves as Filipinos and not simply as Tagalogs, Ilokanos or Visayans. Probably the preliminary stage in the development of national consciousness was reached when indios realized that they have something in common, that is, a common grievance against the Spaniards."</p>
+
+                <h3>Social Structure</h3>
+                <ul>
+                    <li>Spanish Colonial Hierarchy
+                        <ul>
+                            <li>Spanish peninsulares at the top</li>
+                            <li>Filipino principalia in the middle</li>
+                            <li>Common indios at the bottom</li>
+                        </ul>
+                    </li>
+                    <li>Economic System
+                        <ul>
+                            <li>Galleon trade monopoly</li>
+                            <li>Agricultural focus</li>
+                            <li>Limited industrial development</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 3: Rise of Filipino Nationalism</h2>
+            <div class="lesson-content">
+                <h3>Contributing Factors</h3>
+                <ul>
+                    <li>Opening of Suez Canal (1869)
+                        <ul>
+                            <li>Increased contact with Europe</li>
+                            <li>Faster travel and communication</li>
+                            <li>Greater exposure to liberal ideas</li>
+                        </ul>
+                    </li>
+                    <li>Educational Reforms
+                        <ul>
+                            <li>Rise of educated Filipino class</li>
+                            <li>Access to European literature and ideas</li>
+                            <li>Growth of Filipino intelligentsia</li>
+                        </ul>
+                    </li>
+                    <li>Economic Changes
+                        <ul>
+                            <li>Development of export agriculture</li>
+                            <li>Rise of Filipino middle class</li>
+                            <li>Increased economic disparities</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="references">
+            <h2>References</h2>
+            <ul>
+                <li>De la Costa, Horacio (1965). Readings in Philippine History. Manila: Bookmark.</li>
+                <li>Agoncillo, Teodoro A. (1990). History of the Filipino People. Quezon City: Garotech Publishing.</li>
+                <li>Jose, Ricardo. KASAYSAYAN The Story of The Filipino People (Reform and Revolution). Philippines: Asia Publishing Company Limited.1998</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Add navbar scroll behavior
+        const navbar = document.querySelector('.navbar');
+        let lastScrollTop = 0;
+        
+        navbar.classList.add('show');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop === 0) {
+                navbar.classList.remove('hide');
+                navbar.classList.add('show');
+            }
+            else if (scrollTop > lastScrollTop) {
+                navbar.classList.remove('show');
+                navbar.classList.add('hide');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Rizal - Biography</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="biography.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="joserizal.png" alt="Jose Rizal Logo" class="logo">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="modules.html">Modules</a></li>
+                <li><a href="biography.html" class="active">Biography</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="travels.html">Travels</a></li>
+                <li><a href="game1.html">Bonus Game</a></li>
+                <li><a href="examination.html">Test Yourself</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="biography-content">
+        <div class="biography-section">
+            <h2>Early Life and Education</h2>
+            <img src="joserizal.png" alt="Young Jose Rizal" class="biography-image">
+            <p>José Protasio Rizal Mercado y Alonso Realonda was born on June 19, 1861, in Calamba, Laguna, Philippines. He was the seventh of eleven children born to Francisco Rizal Mercado and Teodora Alonso Realonda, a prosperous farming family of mixed Chinese, Japanese, and Filipino ancestry.</p>
+            
+            <div class="key-facts">
+                <h3>Key Facts</h3>
+                <ul>
+                    <li>Born: June 19, 1861</li>
+                    <li>Birthplace: Calamba, Laguna, Philippines</li>
+                    <li>Parents: Francisco Rizal Mercado and Teodora Alonso Realonda</li>
+                    <li>Original Surname: Mercado (changed to Rizal in 1731 to avoid Spanish persecution)</li>
+                    <li>Social Class: Principalia (noble class)</li>
+                </ul>
+            </div>
+
+            <p>From an early age, Rizal showed remarkable intellectual abilities. He learned to read and write by age five and grew up speaking several languages. His mother, who was a highly educated woman for her time, was his first teacher and had a great influence on his early education.</p>
+        </div>
+
+        <div class="biography-section">
+            <h2>Academic Excellence</h2>
+            <p>Rizal's pursuit of education was extensive and distinguished:</p>
+            <ul>
+                <li>Early Education: Private tutors including Maestro Celestino (Latin) and Maestro Lucas Padua (Art)</li>
+                <li>Ateneo Municipal de Manila: Graduated with highest honors</li>
+                <li>University of Santo Tomas: Studied medicine and philosophy</li>
+                <li>Universidad Central de Madrid: Earned degrees in medicine and philosophy and letters</li>
+                <li>Additional Studies: University of Paris and University of Heidelberg</li>
+            </ul>
+        </div>
+
+        <div class="biography-section">
+            <h2>Literary Works and Nationalism</h2>
+            <p>While in Europe, Rizal wrote his most influential works:</p>
+            <ul>
+                <li>"Noli Me Tángere" (1887) - Exposed colonial corruption and abuse</li>
+                <li>"El Filibusterismo" (1891) - Focused on darker themes of revenge and revolution</li>
+                <li>Various essays including "The Indolence of the Filipinos" and "Philippines A Century Hence"</li>
+                <li>Annotations to Morga's "Sucesos de las Islas Filipinas" - Demonstrated pre-colonial Filipino civilization</li>
+            </ul>
+        </div>
+
+        <div class="biography-section">
+            <h2>Final Years and Legacy</h2>
+            <p>Upon his return to the Philippines in 1892, Rizal formed La Liga Filipina, a civic organization promoting unity and mutual aid among Filipinos. However, he was soon arrested and exiled to Dapitan in Mindanao.</p>
+            
+            <p>During his exile (1892-1896), he:</p>
+            <ul>
+                <li>Established a school for boys</li>
+                <li>Created a water system for Dapitan</li>
+                <li>Practiced medicine and treated patients</li>
+                <li>Conducted scientific research</li>
+                <li>Met and fell in love with Josephine Bracken</li>
+            </ul>
+            
+            <p>On December 30, 1896, at the age of 35, Rizal was executed by firing squad at Bagumbayan (now Rizal Park) in Manila. His martyrdom inspired the Philippine Revolution and eventual independence. Today, he is remembered as the national hero of the Philippines, his life and works continuing to inspire Filipinos in their pursuit of freedom, education, and social justice.</p>
+        </div>
+    </div>
+
+    <script>
+        // Add scroll behavior for navbar
+        const navbar = document.querySelector('.navbar');
+        let lastScrollTop = 0;
+        
+        // Show navbar initially
+        navbar.classList.add('show');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop === 0) {
+                navbar.classList.remove('hide');
+                navbar.classList.add('show');
+            }
+            else if (scrollTop > lastScrollTop) {
+                navbar.classList.remove('show');
+                navbar.classList.add('hide');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html> 

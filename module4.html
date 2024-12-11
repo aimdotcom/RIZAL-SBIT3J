@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 - Rizal's Travels</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="module-pages.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="joserizal.png" alt="Jose Rizal Logo" class="logo">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="modules.html" class="active">Modules</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="travels.html">Travels</a></li>
+                <li><a href="game1.html">Bonus Game</a></li>
+                <li><a href="examination.html">Test Yourself</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="module-content">
+        <h1>Module 4: Rizal's Life: Travel Abroad and Homecoming</h1>
+
+        <section class="lesson">
+            <h2>Lesson 1: First Travel Abroad (1882-1885)</h2>
+            <div class="lesson-content">
+                <h3>Purpose and Context</h3>
+                <p>Left for Spain to pursue higher education and broaden his horizons. This journey marked the beginning of his transformation into a reformist and writer.</p>
+                
+                <h3>Major Achievements</h3>
+                <ul>
+                    <li>Spain (Madrid)
+                        <ul>
+                            <li>Studied medicine at Universidad Central de Madrid</li>
+                            <li>Earned his Licentiate in Medicine</li>
+                            <li>Completed degree in Philosophy and Letters</li>
+                            <li>Published "Amor Patrio" in Diariong Tagalog</li>
+                        </ul>
+                    </li>
+                    <li>France (Paris)
+                        <ul>
+                            <li>Studied under renowned artists</li>
+                            <li>Observed European culture and society</li>
+                            <li>Began formulating ideas for reform</li>
+                        </ul>
+                    </li>
+                    <li>Germany (Heidelberg)
+                        <ul>
+                            <li>Studied ophthalmology under Dr. Otto Becker</li>
+                            <li>Learned German language and culture</li>
+                            <li>Started writing "Noli Me Tangere"</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 2: First Homecoming and Second Travel</h2>
+            <div class="lesson-content">
+                <h3>First Homecoming (1887)</h3>
+                <ul>
+                    <li>Key Events
+                        <ul>
+                            <li>Returned after completing education</li>
+                            <li>Practiced medicine in Calamba</li>
+                            <li>Treated his mother's failing eyesight</li>
+                            <li>Published "Noli Me Tangere" in Berlin</li>
+                            <li>Faced growing opposition from Spanish authorities</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Second Travel (1888-1891)</h3>
+                <ul>
+                    <li>Countries Visited
+                        <ul>
+                            <li>Japan (Tokyo, Yokohama)</li>
+                            <li>United States (San Francisco)</li>
+                            <li>United Kingdom (London)</li>
+                            <li>France (Paris)</li>
+                            <li>Belgium (Brussels, Ghent)</li>
+                            <li>Spain (Madrid)</li>
+                        </ul>
+                    </li>
+                    <li>Major Works
+                        <ul>
+                            <li>Published "El Filibusterismo"</li>
+                            <li>Annotated Morga's "Sucesos"</li>
+                            <li>Wrote articles for La Solidaridad</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 3: Final Years</h2>
+            <div class="lesson-content">
+                <h3>Second Homecoming and Exile</h3>
+                <ul>
+                    <li>Return to Philippines (1892)
+                        <ul>
+                            <li>Established La Liga Filipina</li>
+                            <li>Faced increasing surveillance</li>
+                            <li>Arrested and exiled to Dapitan</li>
+                        </ul>
+                    </li>
+                    <li>Life in Dapitan (1892-1896)
+                        <ul>
+                            <li>Established a school for boys</li>
+                            <li>Created water system for the town</li>
+                            <li>Practiced medicine</li>
+                            <li>Met Josephine Bracken</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Final Journey</h3>
+                <ul>
+                    <li>Last Days
+                        <ul>
+                            <li>Volunteered as doctor for Cuba</li>
+                            <li>Arrested and returned to Manila</li>
+                            <li>Imprisoned in Fort Santiago</li>
+                            <li>Executed at Bagumbayan on December 30, 1896</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="references">
+            <h2>References</h2>
+            <ul>
+                <li>Augusto V. De Vlana, Helena Ma, F. Cabrera, et al., Jose Rizal: Social Reformer and Patriot</li>
+                <li>Gagelonia, Pedro A. Rizal's Life, Works, and Writings. National Bookstore, Inc., 1974</li>
+                <li>Jose, Ricardo. KASAYSAYAN The Story of The Filipino People</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Add navbar scroll behavior
+        const navbar = document.querySelector('.navbar');
+        let lastScrollTop = 0;
+        
+        navbar.classList.add('show');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop === 0) {
+                navbar.classList.remove('hide');
+                navbar.classList.add('show');
+            }
+            else if (scrollTop > lastScrollTop) {
+                navbar.classList.remove('show');
+                navbar.classList.add('hide');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html> 

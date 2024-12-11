@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3 - Genealogy and Education</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="module-pages.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="joserizal.png" alt="Jose Rizal Logo" class="logo">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="modules.html" class="active">Modules</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="travels.html">Travels</a></li>
+                <li><a href="game1.html">Bonus Game</a></li>
+                <li><a href="examination.html">Test Yourself</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="module-content">
+        <h1>Module 3: The Genealogy and Education of Our Hero</h1>
+
+        <section class="lesson">
+            <h2>Lesson 1: Family Background and Heritage</h2>
+            <div class="lesson-content">
+                <h3>The Mercado-Rizal Family</h3>
+                <p>José Protasio Rizal Mercado y Alonso Realonda was born on June 19, 1861, in Calamba, Laguna. His family belonged to the principalia (noble class) and were well-respected landowners in Calamba, Laguna.</p>
+                
+                <h3>Family Heritage</h3>
+                <ul>
+                    <li>Ancestry
+                        <ul>
+                            <li>Chinese heritage through both parents</li>
+                            <li>Japanese ancestry traced through family lineage</li>
+                            <li>Filipino roots deeply embedded in Laguna</li>
+                            <li>Mixed cultural influences shaped his worldview</li>
+                        </ul>
+                    </li>
+                    <li>Family Name History
+                        <ul>
+                            <li>Original surname: Mercado</li>
+                            <li>Changed to Rizal in 1731 to avoid Spanish persecution</li>
+                            <li>Name "Rizal" derived from "Ricial" (green fields)</li>
+                            <li>Family maintained both names through generations</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 2: Early Education</h2>
+            <div class="lesson-content">
+                <h3>First Teachers</h3>
+                <ul>
+                    <li>Mother's Influence
+                        <ul>
+                            <li>Teodora Alonso - his first teacher</li>
+                            <li>Taught him to read and write by age 5</li>
+                            <li>Instilled love for learning and literature</li>
+                        </ul>
+                    </li>
+                    <li>Private Tutors
+                        <ul>
+                            <li>Maestro Celestino - taught Latin</li>
+                            <li>Maestro Lucas Padua - taught art</li>
+                            <li>José Alberto - taught surveying and Spanish</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Early Academic Achievements</h3>
+                <ul>
+                    <li>Learned to read and write at an early age</li>
+                    <li>Showed talent in poetry and art</li>
+                    <li>Mastered multiple languages</li>
+                    <li>Excelled in academic subjects</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 3: Formal Education</h2>
+            <div class="lesson-content">
+                <h3>Ateneo Municipal</h3>
+                <ul>
+                    <li>Academic Excellence
+                        <ul>
+                            <li>Enrolled in 1872</li>
+                            <li>Graduated with highest honors</li>
+                            <li>Excelled in philosophy and letters</li>
+                            <li>Demonstrated exceptional abilities in science and mathematics</li>
+                        </ul>
+                    </li>
+                    <li>Extra-Curricular Activities
+                        <ul>
+                            <li>Active in literary activities</li>
+                            <li>Participated in art competitions</li>
+                            <li>Engaged in religious studies</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Higher Education</h3>
+                <ul>
+                    <li>University of Santo Tomas
+                        <ul>
+                            <li>Studied medicine and philosophy</li>
+                            <li>Faced discrimination but persevered</li>
+                            <li>Continued literary pursuits</li>
+                        </ul>
+                    </li>
+                    <li>Universidad Central de Madrid
+                        <ul>
+                            <li>Completed medical studies</li>
+                            <li>Earned degree in Philosophy and Letters</li>
+                            <li>Studied multiple languages</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="references">
+            <h2>References</h2>
+            <ul>
+                <li>Gregorio F. Zaide; JOSE RIZAL: Life, Works & Writings of a Genius, Writer, Scientist & National Hero 1984 ed.</li>
+                <li>Augusto V. De Vlana, Helena Ma, F. Cabrera, et al., Jose Rizal: Social Reformer and Patriot</li>
+                <li>Gagelonia, Pedro A. Rizal's Life, Works, and Writings. National Bookstore, Inc., 1974</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Add navbar scroll behavior
+        const navbar = document.querySelector('.navbar');
+        let lastScrollTop = 0;
+        
+        navbar.classList.add('show');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop === 0) {
+                navbar.classList.remove('hide');
+                navbar.classList.add('show');
+            }
+            else if (scrollTop > lastScrollTop) {
+                navbar.classList.remove('show');
+                navbar.classList.add('hide');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html> 

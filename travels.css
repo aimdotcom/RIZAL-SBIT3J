@@ -1,0 +1,139 @@
+.travels-content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 50px 50px;
+    line-height: var(--line-height-normal);
+    min-height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                url('rizal-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.travels-content h1 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    color: #654321;
+    font-size: 3em;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.travel-period {
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: #654321;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: white;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.travel-period:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    background-color: #7B3F00;
+}
+
+.travel-period h2 {
+    color: inherit;
+    font-size: var(--heading-medium);
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.travel-period h3 {
+    color: #DEB887;
+    font-size: var(--text-large);
+    margin: 20px 0 10px 0;
+}
+
+.travel-details {
+    padding: 20px;
+}
+
+/* Nested list styling */
+.travel-details ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.travel-details > ul > li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 25px;
+    font-size: var(--text-medium);
+    line-height: var(--line-height-normal);
+}
+
+.travel-details > ul > li:before {
+    content: "→";
+    color: #DEB887;
+    position: absolute;
+    left: 0;
+}
+
+.travel-details ul ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.travel-details ul ul li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+    font-size: var(--text-small);
+}
+
+.travel-details ul ul li:before {
+    content: "•";
+    color: #DEB887;
+    position: absolute;
+    left: 0;
+}
+
+.travel-details p {
+    margin-bottom: 20px;
+    font-size: var(--text-medium);
+    line-height: var(--line-height-normal);
+}
+
+/* Specific period styling with unique borders */
+.first-travel {
+    border-left: 5px solid #DEB887;
+}
+
+.first-homecoming {
+    border-left: 5px solid #7B3F00;
+}
+
+.second-travel {
+    border-left: 5px solid #654321;
+}
+
+.second-homecoming {
+    border-left: 5px solid #8B4513;
+}
+
+.exile {
+    border-left: 5px solid #7B3F00;
+}
+
+.final-journey {
+    border-left: 5px solid #654321;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .travels-content {
+        padding: 60px 20px 20px 20px;
+    }
+
+    .travel-period {
+        padding: 20px;
+    }
+} 

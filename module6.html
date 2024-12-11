@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 6 - Morga's Sucesos</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="module-pages.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="joserizal.png" alt="Jose Rizal Logo" class="logo">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="modules.html" class="active">Modules</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="travels.html">Travels</a></li>
+                <li><a href="game1.html">Bonus Game</a></li>
+                <li><a href="examination.html">Test Yourself</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="module-content">
+        <h1>Module 6: Annotation of Morga's Sucesos de las Islas Filipinas</h1>
+
+        <section class="lesson">
+            <h2>Lesson 1: Historical Context</h2>
+            <div class="lesson-content">
+                <h3>Background</h3>
+                <p>In 1890, Rizal published his annotated version of Antonio de Morga's Sucesos de las Islas Filipinas (Events of the Philippine Islands), originally published in Mexico in 1609. This work was part of Rizal's effort to demonstrate that Filipinos had a rich civilization before Spanish colonization.</p>
+                
+                <h3>Significance</h3>
+                <ul>
+                    <li>Historical Research
+                        <ul>
+                            <li>Conducted extensive research in British Museum</li>
+                            <li>Accessed original historical documents</li>
+                            <li>Verified historical accounts and facts</li>
+                        </ul>
+                    </li>
+                    <li>Purpose of Annotations
+                        <ul>
+                            <li>Correct historical inaccuracies</li>
+                            <li>Highlight pre-colonial Filipino civilization</li>
+                            <li>Counter Spanish propaganda</li>
+                            <li>Establish historical truth</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 2: Key Annotations</h2>
+            <div class="lesson-content">
+                <h3>Pre-Colonial Society</h3>
+                <ul>
+                    <li>Social Structure
+                        <ul>
+                            <li>Advanced system of governance</li>
+                            <li>Established social classes</li>
+                            <li>Complex legal systems</li>
+                        </ul>
+                    </li>
+                    <li>Economic Systems
+                        <ul>
+                            <li>International trade networks</li>
+                            <li>Advanced agricultural practices</li>
+                            <li>Sophisticated craftsmanship</li>
+                        </ul>
+                    </li>
+                    <li>Cultural Achievements
+                        <ul>
+                            <li>Indigenous writing systems</li>
+                            <li>Rich literary traditions</li>
+                            <li>Advanced metallurgy and arts</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Historical Evidence</h3>
+                <p>Rizal used Morga's own observations to prove that Filipinos had a well-developed culture before Spanish colonization, including their own systems of writing, government, and commerce. He particularly emphasized the sophistication of pre-colonial Philippine society.</p>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 3: Impact and Legacy</h2>
+            <div class="lesson-content">
+                <h3>Historical Significance</h3>
+                <ul>
+                    <li>Scholarly Achievement
+                        <ul>
+                            <li>First Filipino historical revisionism</li>
+                            <li>Scientific approach to history</li>
+                            <li>Foundation for Filipino historiography</li>
+                        </ul>
+                    </li>
+                    <li>Nationalist Impact
+                        <ul>
+                            <li>Challenged colonial narrative</li>
+                            <li>Inspired national pride</li>
+                            <li>Promoted cultural identity</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Modern Relevance</h3>
+                <p>This work continues to influence Philippine historical studies and remains crucial for understanding:</p>
+                <ul>
+                    <li>Pre-colonial Philippine civilization</li>
+                    <li>Historical research methodology</li>
+                    <li>Development of Filipino nationalism</li>
+                    <li>Importance of historical revisionism in colonial contexts</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="references">
+            <h2>References</h2>
+            <ul>
+                <li>Morga, Antonio de. (1609). Sucesos de las Islas Filipinas.</li>
+                <li>Rizal, Jose. (1890). Annotations to Morga's Sucesos de las Islas Filipinas.</li>
+                <li>Ocampo, Ambeth R. (2011). Rizal Without the Overcoat.</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Add navbar scroll behavior
+        const navbar = document.querySelector('.navbar');
+        let lastScrollTop = 0;
+        
+        navbar.classList.add('show');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop === 0) {
+                navbar.classList.remove('hide');
+                navbar.classList.add('show');
+            }
+            else if (scrollTop > lastScrollTop) {
+                navbar.classList.remove('show');
+                navbar.classList.add('hide');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 - Introduction to the Course</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="module-pages.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="joserizal.png" alt="Jose Rizal Logo" class="logo">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="modules.html" class="active">Modules</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="travels.html">Travels</a></li>
+                <li><a href="game1.html">Bonus Game</a></li>
+                <li><a href="examination.html">Test Yourself</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="module-content">
+        <h1>Module 1: Introduction to the Course: Republic Act 1425</h1>
+
+        <section class="lesson">
+            <h2>Lesson 1: Republic Act 1425</h2>
+            <div class="lesson-content">
+                <h3>Background and Purpose</h3>
+                <p>The Rizal law, also known as "Republic Act 1425", mandates all higher local and state educational institutions (HEIs) in the Philippines to include the Rizal course in their curriculum. This course covers The Life, Works and Writings of Dr. Jose Rizal, with particular emphasis on his two famous novels "Noli Me Tangere and El Filibusterismo".</p>
+                
+                <h3>Key Figures in the Law's Creation</h3>
+                <ul>
+                    <li>Senator Claro M. Recto
+                        <ul>
+                            <li>Authored "Bill 438" (Rizal Bill) - his first authored bill</li>
+                            <li>Advocated for mandatory inclusion of Rizal's works in education</li>
+                            <li>Led the push for comprehensive study of Rizal's life and works</li>
+                        </ul>
+                    </li>
+                    <li>Senator Jose B. Laurel Sr.
+                        <ul>
+                            <li>Chairman of the Committee on Education</li>
+                            <li>Received and interpreted the bill</li>
+                            <li>Facilitated congressional readings and debates</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 2: Issues and Controversies</h2>
+            <div class="lesson-content">
+                <h3>Catholic Church Opposition</h3>
+                <ul>
+                    <li>CBCP's Concerns
+                        <ul>
+                            <li>Violation of Canon Law 1399</li>
+                            <li>Conflict with Catholic doctrine</li>
+                            <li>Concerns about anti-clerical content</li>
+                        </ul>
+                    </li>
+                    <li>Specific Objections
+                        <ul>
+                            <li>Attack on church hierarchy</li>
+                            <li>Challenge to core Catholic faith</li>
+                            <li>Controversial religious content</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Resolution and Compromise</h3>
+                <p>The Rizal bill faced significant opposition but was eventually modified through careful revisions:</p>
+                <ul>
+                    <li>Key Compromises
+                        <ul>
+                            <li>Novels not mandatory in basic education</li>
+                            <li>Compulsory only at college level</li>
+                            <li>Focus on patriotic and peaceful philosophy</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="lesson">
+            <h2>Lesson 3: National Hero Selection</h2>
+            <div class="lesson-content">
+                <h3>Historical Context</h3>
+                <p>Interestingly, no specific law explicitly proclaims Dr. Jose Rizal as the National Hero of the Philippines. His status emerged from his significant contributions to Philippine social transformation and the widespread recognition of his impact.</p>
+
+                <h3>Selection Process</h3>
+                <ul>
+                    <li>Taft Commission Criteria
+                        <ul>
+                            <li>Established during American regime</li>
+                            <li>Set standards for national hero selection</li>
+                            <li>Considered multiple candidates</li>
+                        </ul>
+                    </li>
+                    <li>Notable Candidates
+                        <ul>
+                            <li>Dr. Jose Rizal</li>
+                            <li>Antonio Luna</li>
+                            <li>Marcelo H. Del Pilar</li>
+                            <li>Graciano Lopez Jaena</li>
+                            <li>Emilio Jacinto</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="references">
+            <h2>References</h2>
+            <ul>
+                <li>Augusto V. De Vlana, Helena Ma, F. Cabrera, et al., Jose Rizal: Social Reformer and Patriot</li>
+                <li>Official Gazette, Vol. 52, No. 6, p. 2971 in June 1956</li>
+                <li>Catholic Bishop Conference of the Philippines (CBCP) Analysis</li>
+                <li>Republic Act 1425 Documentation</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Add navbar scroll behavior
+        const navbar = document.querySelector('.navbar');
+        let lastScrollTop = 0;
+        
+        navbar.classList.add('show');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop === 0) {
+                navbar.classList.remove('hide');
+                navbar.classList.add('show');
+            }
+            else if (scrollTop > lastScrollTop) {
+                navbar.classList.remove('show');
+                navbar.classList.add('hide');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,153 @@
+.family-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 50px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                url('rizal-background.jpg');
+    background-attachment: fixed;
+}
+
+.family-section {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: #f0ebe5;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.family-section:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.family-section h2 {
+    color: #333;
+    font-size: var(--heading-medium);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #654321;
+}
+
+.family-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.family-member {
+    background: #654321;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #7B3F00;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-align: center;
+    color: white;
+}
+
+.family-member:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    background: #7B3F00;
+}
+
+.family-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 3px solid #654321;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.family-member:hover img {
+    transform: scale(1.05);
+    border-color: #7B3F00;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.family-member h3 {
+    color: inherit;
+    font-size: var(--text-large);
+    margin-bottom: 10px;
+}
+
+.family-member .relation {
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: var(--text-medium);
+}
+
+.family-member:hover .relation {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.family-member p {
+    color: inherit;
+    font-size: var(--text-medium);
+    line-height: var(--line-height-normal);
+}
+
+.family-member.special {
+    background: #7B3F00;
+    border-left-color: #654321;
+}
+
+.family-member.special:hover {
+    background: #8B4513;
+}
+
+.ancestry-info {
+    padding: 20px;
+    background-color: #654321;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.ancestry-info p {
+    margin-bottom: 15px;
+    font-size: var(--text-medium);
+    color: white;
+    line-height: var(--line-height-normal);
+}
+
+.family-content h1 {
+    text-align: center;
+    color: #654321;
+    font-family: 'Cinzel', serif;
+    font-size: var(--heading-xl);
+    margin-bottom: 50px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .family-section {
+        width: 90%;
+    }
+    
+    .family-content h1 {
+        width: 90%;
+    }
+
+    .family-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .family-member img {
+        width: 150px;
+        height: 150px;
+    }
+} 

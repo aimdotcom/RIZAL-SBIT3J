@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Rizal - Examination</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="examination.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="joserizal.png" alt="Jose Rizal Logo" class="logo">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="modules.html">Modules</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="travels.html">Travels</a></li>
+                <li><a href="game1.html">Bonus Game</a></li>
+                <li><a href="examination.html">Test Yourself</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="exam-content">
+        <div class="exam-header">
+            <h1>Let's see if you have learned something! Test yourself with a twist!</h1>
+
+            <div class="timer-container">
+                <div class="timer">
+                    <span id="minutes">30</span>:<span id="seconds">00</span>
+                </div>
+            </div>
+            <button id="startExam">Start Exam</button>
+        </div>
+
+        <div id="examQuestions" class="hidden">
+            <form id="examForm">
+                <!-- Questions will be dynamically added here -->
+            </form>
+            <button id="submitExam" class="hidden">Submit Exam</button>
+        </div>
+
+        <div id="results" class="hidden">
+            <h2>Your Results</h2>
+            <p>Score: <span id="score">0</span>/30</p>
+            <button id="retakeExam">Retake Exam</button>
+        </div>
+    </div>
+
+    <script src="examination.js"></script>
+</body>
+</html> 

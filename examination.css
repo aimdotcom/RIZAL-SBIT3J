@@ -1,0 +1,332 @@
+/* Add these font styles at the top of homepage.css */
+:root {
+    --heading-xl: 3.2em;      /* For main titles (like hero section) */
+    --heading-large: 2.8em;   /* For section titles */
+    --heading-medium: 2.2em;  /* For subsection headings */
+    --heading-small: 1.8em;   /* For card titles */
+    --text-xl: 1.6em;        /* For important text */
+    --text-large: 1.4em;     /* For navigation and prominent text */
+    --text-medium: 1.2em;    /* For normal text */
+    --text-small: 1em;       /* For secondary text */
+    --text-xs: 0.9em;        /* For captions and small text */
+    --font-primary: 'Arial', sans-serif;
+    --font-secondary: 'Helvetica', sans-serif;
+    --line-height-loose: 1.8;
+    --line-height-normal: 1.6;
+    --line-height-tight: 1.4;
+    --font-historical: 'Playfair Display', serif;
+    --font-decorative: 'Cinzel', serif;
+}
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navbar styles */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    transition: all 0.3s ease;
+    z-index: 100;
+    border-right: 2px solid transparent;
+}
+
+.navbar.show {
+    transform: translateX(0);
+}
+
+.navbar.hide {
+    transform: translateX(-100%);
+}
+
+.navbar:hover {
+    left: unset;
+    background-color: rgba(0, 0, 0, 0.95);
+    border-right: 3px solid #DEB887;
+    box-shadow: 5px 0 25px rgba(0,0,0,0.4);
+}
+
+.navbar.hide:hover {
+    left: 0;
+}
+
+.navbar .logo {
+    width: 120px;
+    height: 120px;
+    margin: 20px auto 40px auto;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.2) rotate(8deg);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    cursor: pointer;
+    border: 3px solid #DEB887;
+    background-color: rgba(222, 184, 135, 0.15);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: var(--font-decorative);
+}
+
+.navbar li {
+    margin: 10px 0;
+    padding: 10px 30px;
+    width: 100%;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-left: 4px solid transparent;
+    font-family: var(--font-decorative);
+}
+
+.navbar li:hover {
+    background-color: rgba(222, 184, 135, 0.25);
+    border-left: 6px solid #DEB887;
+    transform: translateX(15px);
+    padding-left: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: var(--text-large);
+    font-family: var(--font-decorative);
+    font-weight: bold;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #DAA520, transparent);
+    margin: 5px auto 0;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+    width: 100%;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #DAA520;
+    text-shadow: 0 0 15px rgba(218, 165, 32, 0.5);
+    transform: scale(1.1);
+    letter-spacing: 2px;
+}
+
+.navbar.active {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-right: 2px solid #DEB887;
+}
+
+.exam-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 10px 10px;
+    line-height: var(--line-height-normal);
+    min-height: 100vh;
+    background: url('old-paper.jpg') no-repeat center center;
+    background-size: cover;
+    color: #333;
+}
+
+.exam-header {
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    background: #654321;
+    padding: 30px;
+    color: white;
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.exam-header h1 {
+    font-size: var(--heading-large);
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.exam-header h2 {
+    font-size: var(--heading-large);
+    font-family: Cinzel;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: center; /* Center the timer */
+    align-items: center; /* Center vertically */
+    margin: 20px 0; /* Add some margin */
+}
+
+.timer {
+    font-size: 3em; /* Increase font size for visibility */
+    font-family: 'Courier New', Courier, monospace; /* Use a monospaced font for a clock-like appearance */
+    color: #DAA520; /* Change text color for better visibility */
+    background: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
+    padding: 20px 40px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    border: 2px solid #DAA520; /* Border to enhance the clock look */
+    text-align: center; /* Center text */
+}
+
+.timer span {
+    display: inline-block; /* Ensure spans are inline-block for spacing */
+}
+
+#startExam {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: var(--text-large);
+    background: #00ab41;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+#startExam:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(218,165,32,0.4);
+}
+
+.hidden {
+    display: none;
+}
+
+#examQuestions {
+    margin-top: 30px;
+}
+
+.question-container {
+    background: #654321;
+    padding: 30px;
+    margin-bottom: 20px;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.question-text {
+    font-size: var(--text-large);
+    margin-bottom: 15px;
+    color: white;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.1s ease, box-shadow 0.1s ease, border 0.1s ease;
+}
+
+.option:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    border: 3px solid #DEB887;
+    background-color: rgba(222, 184, 135, 0.15);
+}
+
+#results {
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+    background: #654321;
+    color: white;
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#results h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#score {
+    font-size: var(--heading-medium);
+    color: yellow;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .exam-content {
+        padding: 60px 20px 20px 20px;
+    }
+}
+
+#submitExam {
+    padding: 15px 30px;
+    font-size: var(--text-large);
+    background: #00ab41;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    transition: all 0.1s ease;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 40%;
+}
+
+#submitExam.hidden {
+    display: none;
+}
+
+#retakeExam {
+    padding: 15px 30px;
+    font-size: var(--text-large);
+    border-radius: 10px;
+    background: #00ab41;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    width: auto;
+}
+
+#submitExam:hover, #retakeExam:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(218,165,32,0.4);
+} 
